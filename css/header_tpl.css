@@ -1,0 +1,68 @@
+/****************************************/
+/* Приклад коду властивостей для header */
+/****************************************/
+
+/* Для закоментованих властивостей можна */
+/* вказати власні значення та зняти коментар */
+
+header {
+    background-image: url("../img/header1.jpg");
+    background-size: cover;
+    color:#4d79ff;
+    text-align: center;
+    justify-content: center;
+}
+
+header .row {
+    height: 100vh;  /* Приклад! Висота header завжди рівна висоті екрану пристрою */
+    justify-content: left;  /* Контейнери всередині header .row центруються по основній осі (горизонтально) */
+    align-items: center;  /* Контейнер всередині header .row центрується по поперечній осі (вертикально) */
+
+}
+#block{
+	float:left;
+    padding: 30pt 10pt;
+	margin-right: 20px;
+}
+header h1{
+    font-size:30px;
+	color: #fff;
+	font-family: 'Poiret One', cursive;
+}
+@media screen and (max-width:900px) and (orientation: portrait) {
+	header .row {
+		justify-content: flex-end;
+		align-items: flex-end;
+		padding: 0 20px 40px;
+		font-family: 'Poiret One', cursive;
+	}
+    header h1 {
+		text-align:right;
+        font-size:60pt;
+		font-family: 'Poiret One', cursive;
+    }
+	#block{
+	float:right;
+    padding: 30pt 10pt;
+	
+	}
+}
+@media screen and (max-width:767px) {
+	#block{
+	float:right;
+	margin-right:70px;
+	}
+	header {
+	background-size: cover;
+	text-align: center;
+    justify-content: center;
+
+	}
+     
+	header h1{
+    font-size:13px;
+	color: #fff;
+	font-family: 'Poiret One', cursive;
+}
+    
+}

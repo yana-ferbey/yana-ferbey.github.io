@@ -1,0 +1,103 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.container,
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Плавні зміни властивостей лінків */
+a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+
+/*************************************/
+/* Зміни CSS коду розпочинати звідси */
+/*************************************/
+
+
+
+section {
+    min-height: 100vh;    /* !!! Тимчасово для відладки !!! Висота секцій рівна висоті екрану */
+    padding: 50px 0;  /* Внітрішні відступи зверху та знизу у секціях <section> */
+}
+
+#About, #Photo {
+    min-height: 100px;
+}
+
+#About {
+	margin-top: 30px;
+}
+#About p {
+	margin-top: 20px;
+	text-align:center;
+	font-size: 30px;
+    font-family: 'Poiret One', cursive;
+}
+
+#Contacts, #Art, #Contact {
+    min-height: 100px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#Art h2{
+	text-align: center;
+	margin-bottom: 20px;
+	color: #111;
+	font-family: 'Poiret One', cursive;
+}
+
+#Photo h2  {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #111;
+	font-family: 'Poiret One', cursive;
+}
+
+#Contacts h2 {
+	color: #111;
+	font-family: 'Poiret One', cursive;
+}
+footer {
+    min-height: 50px;
+    background-color:#000;
+}
+#f {
+	padding-top:10px;
+	text-align:center;
+	color:#fff;
+	font-family: 'Poiret One', cursive;
+}
+
+/**************************************/
+/* Зміна властивостей для breakpoints */
+/**************************************/
+
+@media screen and (max-width:575px) {
+    /*.container,*/
+    .navbar {
+        padding-left: 15px;    /* Для Small додати відступи */
+        padding-right: 15px;   /* зліва та справа у .container та .navbar */
+    }
+
+    /* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+
+    section {
+        padding: 25px 0;
+    }
+	#About p {
+	margin-top: 20px;
+	text-align:center;
+	font-size: 15px;
+    font-family: 'Poiret One', cursive;
+}
+
+}
