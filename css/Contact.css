@@ -155,7 +155,7 @@
 
 @media screen and (max-width:575px) {
    #Contacts h2, #Contact h2{
-	margin-right: 0;
+	margin-right: -50px;
    }
 	#Contacts h3, #Contact h3{
 		margin-left: 0;
